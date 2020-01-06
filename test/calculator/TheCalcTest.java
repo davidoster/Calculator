@@ -53,26 +53,26 @@ public class TheCalcTest {
     }
     
     @Test
-    public void testDivideNumbersWith1() {
+    public void testDivideNumbersWith1() throws Exception {
        TheCalc theCalc = new TheCalc(Arrays.asList(new Integer[] {1,2,3,4}));
         Assert.assertEquals(Arrays.asList(new Integer[] {1,2,3,4}), theCalc.divideNumbers(1)); 
     }
     
     @Test
-    public void testDivideNumbersWithNegative1() {
+    public void testDivideNumbersWithNegative1() throws Exception {
        TheCalc theCalc = new TheCalc(Arrays.asList(new Integer[] {1,2,3,4}));
         Assert.assertEquals(Arrays.asList(new Integer[] {1/-1,2/-1,3/-1,4/-1}), theCalc.divideNumbers(-1)); 
     }
     
     @Test
-    public void testDivideNumbersWithBigPositiveNumber() {
+    public void testDivideNumbersWithBigPositiveNumber() throws Exception {
        TheCalc theCalc = new TheCalc(Arrays.asList(new Integer[] {1,2,3,4}));
         Assert.assertEquals(Arrays.asList(new Integer[] {1/Integer.MAX_VALUE,2/Integer.MAX_VALUE,
                                                          3/Integer.MAX_VALUE,4/Integer.MAX_VALUE}), theCalc.divideNumbers(Integer.MAX_VALUE)); 
     }
     
     @Test
-    public void testDivideNumbersWithZero() {
+    public void testDivideNumbersWithZero() throws Exception {
        TheCalc theCalc = new TheCalc(Arrays.asList(new Integer[] {1,2,3,4}));
         Assert.assertEquals(Arrays.asList(new Integer[] {1/0,2/0,
                                                          3/0,4/0}), theCalc.divideNumbers(0)); 

@@ -8,6 +8,8 @@ package calculator;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -30,7 +32,11 @@ public class Calculator {
         System.out.println(myCalculator.addNumbers());
         System.out.println(myCalculator.subtractNumbers());
         System.out.println(myCalculator.multiplyNumbers(i));
-        System.out.println(myCalculator.divideNumbers(i));
+        try {
+            System.out.println(myCalculator.divideNumbers(i));
+        } catch (Exception ex) {
+            Logger.getLogger(Calculator.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
 }
