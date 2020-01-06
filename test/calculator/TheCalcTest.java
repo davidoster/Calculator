@@ -74,7 +74,6 @@ public class TheCalcTest {
     @Test
     public void testDivideNumbersWithZero() throws Exception {
        TheCalc theCalc = new TheCalc(Arrays.asList(new Integer[] {1,2,3,4}));
-        Assert.assertEquals(Arrays.asList(new Integer[] {1/0,2/0,
-                                                         3/0,4/0}), theCalc.divideNumbers(0)); 
+        Assert.assertEquals(Arrays.asList(new Integer[] {0,0,0,0}), theCalc.divideNumbers(0)); 
     }
 }
