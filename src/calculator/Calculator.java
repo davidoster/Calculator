@@ -20,12 +20,17 @@ public class Calculator {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        TheCalc aCalc = new TheCalc();
+        int i = 0;
+        
         List<Integer> theNumbers = new ArrayList<>(Arrays.asList(new Integer[] {1,2,3,4}));
         
         TheCalc myCalculator = new TheCalc(theNumbers);
         myCalculator.printNumbers();
         System.out.println(myCalculator.addNumbers());
         System.out.println(myCalculator.subtractNumbers());
+        System.out.println(myCalculator.multiplyNumbers(i));
+        System.out.println(myCalculator.divideNumbers(i));
     }
     
 }
