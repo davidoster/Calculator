@@ -24,7 +24,7 @@ public class Calculator {
         // TODO code application logic here
         TheCalc aCalc = new TheCalc();
         int i = 0;
-        
+        int k = 0;
         List<Integer> theNumbers = new ArrayList<>(Arrays.asList(new Integer[] {1,2,3,4}));
         
         TheCalc myCalculator = new TheCalc(theNumbers);
